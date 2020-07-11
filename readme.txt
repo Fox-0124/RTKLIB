@@ -1,4 +1,4 @@
-#
+﻿#
 #  RTKLIB 2.4.3 Betas
 #
 
@@ -137,3 +137,4 @@ UPDATE HISTORY
                       support binex upgraded galileo ephemeris (0x01-14)
                       support 460800 and 921600 bps for serial stream
                       fix bug on return value of resamb_LAMBDA() error
+2020/xx/xx  2.4.3 b34 fix bug on reading sp3 file

@@ -1904,7 +1904,7 @@ EXPORT int lexioncorr(gtime_t time, const nav_t *nav, const double *pos,
                       const double *azel, double *delay, double *var);
 
 /* application defined functions ---------------------------------------------*/
-extern int showmsg(char *format,...);
+extern int showmsg(const char *format,...);
 extern void settspan(gtime_t ts, gtime_t te);
 extern void settime(gtime_t time);
 

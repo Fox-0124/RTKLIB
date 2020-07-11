@@ -2,7 +2,15 @@
 *.obs
 *.ini
 *.local
+debug
 Release
 Release_Build
 Debug_Build
 __history
+build-*
+*.vcxproj
+*.vcxproj.filters
+*.pro.user
+.vs
+*.sln
+*.bak

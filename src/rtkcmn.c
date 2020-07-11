@@ -135,6 +135,10 @@
 #include <sys/time.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#else
+#include <mmsystem.h>
+#pragma comment(lib, "winmm.lib")
+#pragma comment(lib, "wininet")
 #endif
 #include "rtklib.h"
 

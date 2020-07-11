@@ -81,7 +81,7 @@ MainForm *mainForm;
 extern "C" {
 
 // show message in message area ---------------------------------------------
-extern int showmsg(char *format, ...)
+extern int showmsg(const char *format, ...)
 {
     va_list arg;
     char buff[1024];

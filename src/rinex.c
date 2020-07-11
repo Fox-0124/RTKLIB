@@ -100,7 +100,7 @@
 
 #define SQR(x)      ((x)*(x))
 
-#define NUMSYS      6                   /* number of systems */
+#define NUMSYS      7                   /* number of systems */
 #define MAXRNXLEN   (16*MAXOBSTYPE+4)   /* max rinex record length */
 #define MAXPOSHEAD  1024                /* max head line position */
 #define MINFREQ_GLO -7                  /* min frequency number glonass */
@@ -1910,7 +1910,7 @@ extern int outrnxobsh(FILE *fp, const rnxopt_t *opt, const nav_t *nav)
 {
     const char *glo_codes[]={"C1C","C1P","C2C","C2P"};
     double ep[6],pos[3]={0},del[3]={0};
-    int i,j,k,n,prn[MAXPRNGLO];
+    int i,j,k,n,prn[MAXPRNGLO+1];
     char date[32],*sys,*tsys="GPS";
     
     trace(3,"outrnxobsh:\n");
