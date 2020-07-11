@@ -80,7 +80,7 @@ static int readsp3h(FILE *fp, gtime_t *time, char *type, int *sats,
         }
         else if (2<=i&&i<=6) {
             if (i==2) {
-                ns=(int)str2num(buff,4,2);
+                ns=(int)str2num(buff,3,3);
             }
             for (j=0;j<17&&k<ns;j++) {
                 sys=code2sys(buff[9+3*j]);
@@ -273,8 +273,8 @@ extern void readsp3(const char *file, nav_t *nav, int opt)
     for (i=j=0;i<n;i++) {
         if (!(ext=strrchr(efiles[i],'.'))) continue;
         
-        if (!strstr(ext+1,"sp3")&&!strstr(ext+1,".SP3")&&
-            !strstr(ext+1,"eph")&&!strstr(ext+1,".EPH")) continue;
+        if (!strstr(ext+1,"sp3")&&!strstr(ext+1,"SP3")&&
+            !strstr(ext+1,"eph")&&!strstr(ext+1,"EPH")) continue;
         
         if (!(fp=fopen(efiles[i],"r"))) {
             trace(2,"sp3 file open error %s\n",efiles[i]);
