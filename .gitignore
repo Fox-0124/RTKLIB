@@ -14,5 +14,3 @@ build-*
 .vs
 *.sln
 *.bak
-*.aps
-app/rtknavi_qt/.conf
