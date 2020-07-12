@@ -148,9 +148,11 @@ MainWindow::MainWindow(QWidget *parent)
     
     rtksvrinit(&rtksvr);
     strinit(&monistr);
-    
+
     setWindowTitle(QString(tr("%1 ver. %2")).arg(PRGNAME).arg(VER_RTKLIB));
     setWindowIcon(QIcon(":/icons/rtknavi_Icon.ico"));
+
+	this->move(100, 100);
 
     TLEData.n=TLEData.nmax=0;
     TLEData.data=NULL;
