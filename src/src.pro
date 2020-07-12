@@ -49,6 +49,7 @@ SOURCES += rtkcmn.c \
     tides.c \
     tle.c \
     rcv/binex.c \
+    rcv/cmr.c \
     rcv/crescent.c \
     rcv/gw10.c \
     rcv/javad.c \
@@ -59,8 +60,8 @@ SOURCES += rtkcmn.c \
     rcv/septentrio.c \
     rcv/skytraq.c \
     rcv/ss2.c \
-    rcv/ublox.c \
-    rcv/cmr.c
+    rcv/tersus.c \
+    rcv/ublox.c 
 
 HEADERS += rtklib.h
 

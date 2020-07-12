@@ -633,9 +633,9 @@ static void *rtksvrthread(void *arg)
             tick1hz=tick;
         }
         /* write periodic command to input stream */
-        for (i=0;i<3;i++) {
-            periodic_cmd(cycle*svr->cycle,svr->cmds_periodic[i],svr->stream+i);
-        }
+        //for (i=0;i<3;i++) {
+        //    periodic_cmd(cycle*svr->cycle,svr->cmds_periodic[i],svr->stream+i);
+        //}
         /* send nmea request to base/nrtk input stream */
         if (svr->nmeacycle>0&&(int)(tick-ticknmea)>=svr->nmeacycle) {
             send_nmea(svr,&tickreset);

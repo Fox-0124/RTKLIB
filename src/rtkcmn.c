@@ -129,6 +129,7 @@
 #define _POSIX_C_SOURCE 199506
 #include <stdarg.h>
 #include <ctype.h>
+#include "rtklib.h"
 #ifndef WIN32
 #include <dirent.h>
 #include <time.h>
@@ -140,7 +141,6 @@
 #pragma comment(lib, "winmm.lib")
 #pragma comment(lib, "wininet")
 #endif
-#include "rtklib.h"
 
 /* constants -----------------------------------------------------------------*/
 
