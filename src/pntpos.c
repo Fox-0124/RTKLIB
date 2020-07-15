@@ -39,7 +39,7 @@ static double varerr(const prcopt_t *opt, double el, int sys)
 {
     double fact,varr;
     fact=sys==SYS_GLO?EFACT_GLO:(sys==SYS_SBS?EFACT_SBS:EFACT_GPS);
-    varr=SQR(opt->err[0])*(SQR(opt->err[1])+SQR(opt->err[2])/sin(el));
+    varr=SQR(opt->err[0])*(SQR(opt->err[1])+SQR(opt->err[2]/sin(el)));
     if (opt->ionoopt==IONOOPT_IFLC) varr*=SQR(3.0); /* iono-free */
     return SQR(fact)*varr;
 }
